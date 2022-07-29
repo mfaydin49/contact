@@ -1,14 +1,18 @@
 import React from "react";
 import Form from "./Form";
 import List from "./List";
+import { useSelector } from "react-redux";
+import { contactSelectors } from "../../redux/contactSlice";
 
 const Contacts = () => {
+  const numberOfcontact = useSelector(contactSelectors.selectTotal);
+
   return (
-    <div id="container">
-      <h1>Contacts</h1>
+    <>
+      <h1>Contacts ({numberOfcontact})</h1>
       <List />
       <Form />
-    </div>
+    </>
   );
 };
 

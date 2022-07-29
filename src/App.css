@@ -50,10 +50,27 @@ li {
 }
 
 .deleteBtn {
+  padding: 5px;
   width: 18px;
   height: 22px;
   background-color: brown;
   color: white;
   text-align: center;
+  cursor: pointer;
+}
+
+.deleteAllBtn {
+  text-align: right;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.deleteAllBtn:hover {
+  text-decoration: underline;
+}
+
+.edit span {
+  margin-left: 10px;
+  font-size: 12px;
   cursor: pointer;
 }
